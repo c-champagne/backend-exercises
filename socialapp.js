@@ -16,8 +16,8 @@ let recentShouts = [
 
 app.post("/shout", parseData, function (req, res, next) {
     let newShout = {};
-   /*  let newShout["name"] =  "User";
-    let newShout["shout"] =  "Test Shout"; */
+    /* newShout["name"] =  "User";
+    newShout["shout"] =  "Test Shout"; */
     
     newShout["name"] = req.body.name;
     newShout["shout"] = req.body.shout;
