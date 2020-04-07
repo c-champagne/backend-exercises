@@ -15,9 +15,10 @@ let recentShouts = [
 ];
 
 app.post("/shout", parseData, function (req, res, next) {
-    /* let name = prompt("Name:", "User") ;
-    let shout = prompt("What's worth shouting about?", "Test Shout"); */
     let newShout = {};
+   /*  let newShout["name"] =  "User";
+    let newShout["shout"] =  "Test Shout"; */
+    
     newShout["name"] = req.body.name;
     newShout["shout"] = req.body.shout;
     recentShouts.push(newShout);
